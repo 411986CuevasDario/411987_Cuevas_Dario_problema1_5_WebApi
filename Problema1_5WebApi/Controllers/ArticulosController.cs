@@ -7,11 +7,11 @@ namespace Problema1_5WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductoController : ControllerBase
+    public class ArticulosController : ControllerBase
     {
         private readonly ArticuloService _articuloService;
 
-        public ProductoController()
+        public ArticulosController()
         {
             _articuloService = new ArticuloService();
         }
