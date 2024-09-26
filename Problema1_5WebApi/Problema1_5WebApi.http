@@ -4,3 +4,5 @@ GET {{Problema1_5WebApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{Problema1_5WebApi_HostAddress}}/factura/
+Accept: application/json

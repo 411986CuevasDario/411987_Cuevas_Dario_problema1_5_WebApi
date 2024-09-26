@@ -12,6 +12,7 @@ namespace Problema1_5.Data
         bool Save(Factura factura);
         bool Delete(int id);
         Factura GetById(int id);
+        bool Update(Factura factura);
     }
     public class FacturaRepository : IFacturaRepository
     {
@@ -115,8 +116,27 @@ namespace Problema1_5.Data
            
 
         }
-        public bool Delete(int id) { 
-            return false;
+        public bool Update(Factura factura)
+        {
+            SqlCommand command = new SqlCommand("modificar_factura ");
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add(new SqlParameter("@id", factura.Id));
+            command.Parameters.Add(new SqlParameter("@pagoId", factura.FormaPagoId));
+            command.Parameters.Add(new SqlParameter("@fecha", factura.Fecha));
+            command.Parameters.Add(new SqlParameter("@cliente", factura.Cliente));
+
+
+
+
+            return DataHelper.GetInstance().ExecuteSPQuery(command);
+
+        }
+        public bool Delete(int id)
+        {
+
+            DataHelper.GetInstance().GetById("eliminar_factura", id);
+
+            return true;
         }
     }
 }

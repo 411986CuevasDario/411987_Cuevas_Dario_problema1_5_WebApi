@@ -29,7 +29,7 @@ namespace Problema1_5WebApi.Controllers
             var art = _articuloService.GetById(id);
             if (art != null)
             {
-                return Ok();
+                return Ok(art);
 
             }
             return NotFound();

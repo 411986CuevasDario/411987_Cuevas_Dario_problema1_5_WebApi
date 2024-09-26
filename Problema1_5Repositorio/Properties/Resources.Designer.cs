@@ -61,7 +61,7 @@ namespace Problema1_5Repositorio.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-LG64KJU;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=True.
+        ///   Busca una cadena traducida similar a Data Source=desktop-lg64kju;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=TrueData Source=desktop-lg64kju;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=True.
         /// </summary>
         internal static string connectionString {
             get {

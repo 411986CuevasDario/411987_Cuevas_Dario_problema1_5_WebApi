@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="connectionString" xml:space="preserve">
-    <value>Data Source=DESKTOP-LG64KJU;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=True</value>
+    <value>Data Source=desktop-lg64kju;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=TrueData Source=desktop-lg64kju;Initial Catalog=problema1_5;Integrated Security=True;Trust Server Certificate=True</value>
   </data>
 </root>
